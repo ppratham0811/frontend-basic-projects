@@ -1,0 +1,186 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f5d5d9;
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    font-weight: 200;
+    margin: 0.6rem;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav a {
+    cursor: pointer;
+}
+
+nav {
+    margin: 0 0 10px 0;
+    padding: 5px 10px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index:1;
+    transition: background-color 0.4s ease-in;
+}
+
+.scroll {
+    background-color:rgb(206, 91, 206);
+}
+
+.scroll h1 {
+    color:rgb(255, 255, 255);
+    transition: color 0.4s ease-out;
+}
+.scroll #hamburger .bar {
+    background-color: white;
+    transition: color 0.4s ease-in, border-color 0.4s ease-in;
+}
+
+.scroll #hamburger {
+    border-color: white;
+    transition: border-color 0.4s ease-in;
+}
+
+.scroll-up {
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    cursor: pointer;
+}
+.up-arrow {
+    width: 4vw;
+    height: 100%;
+}
+.hide-scroll-btn {
+    display: none;
+}
+
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 8%;
+    border: 1.2px solid rgb(255, 0, 0);
+    border-radius: 0.1em;
+    padding: 8px 8px;
+}
+#hamburger:hover {
+    cursor: pointer;
+}
+.bar {
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    margin: 2.4px;
+}
+
+h1 {
+    color: red;
+    font-size: 2em;
+    margin: 0 10px 0;
+}
+
+#first-hand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.lolli-icon img {
+    width: 10vw;
+    height: 100%;
+}
+
+#first-hand {
+    margin: 0 0 2rem 0;
+}
+
+#museum-of-candy span {
+    display: block;
+    font-size: 5vw;
+    color: white;
+    font-weight: 300;
+}
+
+#first-hand span b {
+    color: red;
+    font-weight: 300;
+}
+
+#museum-of-candy {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#milk {
+    display: flex;
+    
+}
+
+#text-one {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+#text-one span {
+    font-size: 4vw;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+#text-one p {
+    color: white;
+    line-height: 2;
+    color: rgb(255, 118, 141);
+    width: 80%;
+    text-align: center;
+    font-size: 1.2vw;
+    margin: 0 auto;
+}
+
+@media (max-width: 560px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+}
